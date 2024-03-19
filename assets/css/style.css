@@ -1,0 +1,214 @@
+/* -Common Css Start- */
+:root {
+    --tw-custom-color: #ffffff;
+    --tw-primary-color: #343f52;
+    --tw-secondary-color: #FF7F00;
+    --tw-normal-color: #ecf2f6;
+    --tw-light-color: #aab0bc;
+}
+
+:root {
+    --base-primary-size: 16px;
+    --base-secondary-size: 20px;
+    --base-custom-size: 40px;
+    --base-normal-size: 56px;
+    --base-heading-size: 80px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* -Common Css End- */
+
+/* --Header Start-- */
+ul.mainmenu li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.menu-item-has-children .axil-submenu li {
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.menu-item-has-children .axil-submenu li:hover {
+    background-color: var(--tw-normal-color);
+}
+
+ul.mainmenu li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-has-children .axil-submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 14px;
+    width: 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-top: 5px solid var(--tw-secondary-color);
+    border-radius: 7px;
+    transition: all ease 0.3s;
+    top: 85px;
+}
+
+.menu-item-has-children:hover .axil-submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 55px;
+}
+
+/* .mainmenu>li>a:hover:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.mainmenu>li>a:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--tw-secondary-color);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+} */
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main-nav {
+    flex: 1 1;
+    margin: 0 55px 0 50px;
+}
+
+.mainmenu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu>li {
+    margin: 0 24px;
+}
+
+.mainmenu>.menu-item-has-children {
+    position: relative;
+}
+
+.mainmenu>li>a {
+    color: var(--tw-primary-color);
+    font-size: var(--base-secondary-size);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+}
+
+ul.mainmenu li a svg {
+    margin-left: 2px;
+    font-size: var(--tw-primary-color);
+}
+
+.axil-header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 4;
+}
+
+.axil-mainmenu {
+    padding: 50px 0;
+    transition: all .3s ease-in-out;
+    transition: var(--transition);
+}
+
+.axil-header .header-navbar .header-logo a {
+    display: block;
+}
+
+.header-action>ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-action .sidemenu-btn {
+    margin-right: 0px;
+    list-style: none;
+}
+
+.header-action .sidemenu-btn .btn-wrap {
+    height: 60px;
+    width: 60px;
+    background-color: var(--tw-normal-color);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.header-action .sidemenu-btn .btn-wrap span {
+    height: 2px;
+    width: 20px;
+    background-color: var(--tw-primary-color);
+    margin-bottom: 4px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    transition: var(--transition);
+}
+
+
+.header-action .sidemenu-btn .btn-wrap span:last-child {
+    margin-bottom: 0;
+    width: 10px;
+    margin-right: -10px;
+}
+
+.header-action .sidemenu-btn .btn-wrap:hover .header-action .sidemenu-btn .btn-wrap span:first-child {
+    margin-bottom: 0;
+    width: 10px;
+    margin-right: -10px;
+}
+
+.header-action .sidemenu-btn .btn-wrap:hover .header-action .sidemenu-btn .btn-wrap span:last-child {
+    height: 2px;
+    width: 20px;
+}
