@@ -15,10 +15,40 @@ $(window).scroll(function () {
 $('.services-slider').slick({
     infinite: true,
     slidesToShow: 3,
+    dots: true,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     arrows: true,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
     // prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     // nextArrow: '<button type="button" class="slick-next">Next</button>'
 });
@@ -29,6 +59,7 @@ $(".about-us-video").modalVideo();
 
 //---services end---
 
+// Featured Case Study Counter Start
 $(document).ready(function () {
 
     var counters = $(".count");
@@ -51,3 +82,107 @@ $(document).ready(function () {
     }
 
 });
+
+// Featured Case Study Counter End
+
+
+// dark mood start
+$(document).ready(function () {
+    const darkModeToggle = $('#darkModeToggle');
+    const body = $('body');
+
+    darkModeToggle.on('click', function () {
+        body.toggleClass('dark-mode');
+        const isDarkMode = body.hasClass('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+    });
+
+    const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+    if (isDarkMode) {
+        body.addClass('dark-mode');
+    }
+});
+// dark mood End
+
+
+// <!------Testimonial Start----->
+
+// $('.testinmonial-slider').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     responsive: [
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 arrows: false,
+//                 centerMode: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 3
+//             }
+//         },
+//         {
+//             breakpoint: 480,
+//             settings: {
+//                 arrows: false,
+//                 centerMode: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
+
+// $('.testinmonial-slider').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     arrows: true,
+//     slidesToScroll: 1,
+//     responsive: [
+//         {
+//             breakpoint: 991,
+//             settings: {
+//                 arrows: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 2
+//             }
+//         },
+//         {
+//             breakpoint: 767,
+//             settings: {
+//                 arrows: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
+
+$('.testinmonial-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    arrows: true,
+    slidesToScroll: 1,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                arrows: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                arrows: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+
+// <!------Testimonial End----->
