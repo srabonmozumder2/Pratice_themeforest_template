@@ -42,8 +42,11 @@
                 <div class="container">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="#">
+                            <a href="#" class="logo-header-1">
                                 <img src="assets/img/logo-2.svg" alt="">
+                            </a>
+                            <a href="#" class="logo-2">
+                                <img src="assets/img/logo-1.svg" alt="">
                             </a>
                         </div>
                         <div class="header-main-nav">
@@ -155,23 +158,29 @@
                             </nav>
                         </div>
                         <div class="header-action">
-                            <ul class="list-unstyled">
-                                <li class="sidemenu-btn">
-                                    <button class="btn-wrap" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasWithBothOptions"
-                                        aria-controls="offcanvasWithBothOptions">
-                                        <span>
+                            <div class="header-dark-light-btn">
+                                <div class="darkmoood-parent">
+                                    <button id="darkModeToggle"><i class="fa-solid fa-sun"></i></button>
+                                </div>
 
-                                        </span>
-                                        <span>
+                                <ul class="list-unstyled">
+                                    <li class="sidemenu-btn">
+                                        <button class="btn-wrap" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasWithBothOptions"
+                                            aria-controls="offcanvasWithBothOptions">
+                                            <span>
 
-                                        </span>
-                                        <span>
+                                            </span>
+                                            <span>
 
-                                        </span>
-                                    </button>
-                                </li>
-                            </ul>
+                                            </span>
+                                            <span>
+
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
                                 id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                                 <div class="offcanvas-header">
@@ -212,63 +221,84 @@
                                                             Information</span>
                                                         <p>Theodore Lowe, Ap #867-859 <br> Sit Rd, Azusa New York</p>
                                                     </address>
-                                                    <address class="address"><span class="title">We're Available 24/7.
-                                                            Call Now.</span><a href="tel:8884562790" class="tel"><svg
-                                                                stroke="currentColor" fill="currentColor"
+                                                    <address class="address">
+                                                        <span class="title">We're Available 24/7.
+                                                            Call Now.
+                                                        </span>
+                                                        <a href="tel:8884562790" class="tel">
+                                                            <svg stroke="currentColor" fill="currentColor"
                                                                 stroke-width="0" viewBox="0 0 512 512" height="1em"
                                                                 width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path
                                                                     d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
                                                                 </path>
-                                                            </svg> (888) 456-2790</a><a href="tel:12125553333"
-                                                            class="tel"><svg stroke="currentColor" fill="currentColor"
+                                                            </svg>
+                                                            (888) 456-2790
+                                                        </a>
+                                                        <a href="tel:12125553333" class="tel">
+                                                            <svg stroke="currentColor" fill="currentColor"
                                                                 stroke-width="0" viewBox="0 0 512 512" height="1em"
                                                                 width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path
                                                                     d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
                                                                 </path>
-                                                            </svg> (121) 255-53333</a></address>
+                                                            </svg>
+                                                            (121) 255-53333
+                                                        </a>
+                                                    </address>
                                                 </div>
                                                 <div class="contact-inner">
                                                     <h5 class="title">Find us here</h5>
                                                     <div class="contact-social-share">
                                                         <ul class="social-share list-unstyled">
-                                                            <li><a href="https://facebook.com/"><svg
-                                                                        stroke="currentColor" fill="currentColor"
+                                                            <li>
+                                                                <a href="#">
+                                                                    <svg stroke="currentColor" fill="currentColor"
                                                                         stroke-width="0" viewBox="0 0 320 512"
                                                                         height="1em" width="1em"
                                                                         xmlns="http://www.w3.org/2000/svg">
                                                                         <path
                                                                             d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                                         </path>
-                                                                    </svg></a></li>
-                                                            <li><a href="https://twitter.com/"><svg
-                                                                        stroke="currentColor" fill="currentColor"
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://twitter.com/">
+                                                                    <svg stroke="currentColor" fill="currentColor"
                                                                         stroke-width="0" viewBox="0 0 512 512"
                                                                         height="1em" width="1em"
                                                                         xmlns="http://www.w3.org/2000/svg">
                                                                         <path
                                                                             d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                                                                         </path>
-                                                                    </svg></a></li>
-                                                            <li><a href="https://www.behance.net/"><svg
-                                                                        stroke="currentColor" fill="currentColor"
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.behance.net/">
+                                                                    <svg stroke="currentColor" fill="currentColor"
                                                                         stroke-width="0" viewBox="0 0 576 512"
                                                                         height="1em" width="1em"
                                                                         xmlns="http://www.w3.org/2000/svg">
                                                                         <path
                                                                             d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
                                                                         </path>
-                                                                    </svg></a></li>
-                                                            <li><a href="https://www.linkedin.com/"><svg
-                                                                        stroke="currentColor" fill="currentColor"
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/">
+                                                                    <svg stroke="currentColor" fill="currentColor"
                                                                         stroke-width="0" viewBox="0 0 448 512"
                                                                         height="1em" width="1em"
                                                                         xmlns="http://www.w3.org/2000/svg">
                                                                         <path
                                                                             d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                                                                         </path>
-                                                                    </svg></a></li>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -281,13 +311,10 @@
                     </div>
                 </div>
             </div>
-            <div class="darkmoood-parent">
-                <button id="darkModeToggle"><i class="fa-regular fa-sun"></i></button>
-            </div>
         </header>
 
         <!---Hero Section Start---->
-        <section class="hero-section">
+        <section class="hero-section inner-hero-bg" style="background-image: url('./assets/img/banner-bg.png');">
             <div class="container">
                 <div class="row align-items-center gap-5">
                     <div class="col-lg-6 col-12 hero-section-content">
@@ -299,6 +326,10 @@
                         <img src="assets/img/3d8.png" alt="">
                     </div>
                 </div>
+            </div>
+            <div class="hero-gd-bg">
+                <span class="hero-first-gd-bg"></span>
+                <span class="hero-secound-gd-bg"></span>
             </div>
         </section>
         <!---Hero Section End---->
@@ -965,6 +996,305 @@
             </div>
         </section>
         <!------Testimonial End----->
+
+        <!------Pricing Start----->
+        <section class="pricing-sec">
+            <div class="container">
+                <div class="pricing-parent-heading">
+                    <h3 class="pricing-intro">Pricing Plan </h3>
+                    <h1> We’ve built solutions for... </h1>
+                    <p>Flexible pricing options for freelancers and design teams. </p>
+                </div>
+
+                <div class="d-flex align-items-start pricing-tabile-parent">
+                    <div class="pricing-tabs-button nav d-flex nav-pills" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Billed Yearly </button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Billed Monthly</button>
+                    </div>
+                    <div class="tab-content parant-pricing-tabile id=" v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="main-parant-card-item">
+                                        <div class="singel-pricing-card">
+                                            <div class="card-intro">
+                                                <h2>Professional </h2>
+                                                <p>A beautiful, simple website </p>
+                                            </div>
+                                            <div class="pricing-amount">
+                                                <h2><strong>$199.99</strong> /yearly</h2>
+                                            </div>
+
+                                            <div class="pricing-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>10 Pages Responsive Website</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 PPC Campaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 10 SEO Keywords</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 Facebook Camplaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 2 Video Camplaigns</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="get-started-btn btn btn">Get Started Today</button>
+                                        </div>
+                                        <div class="pricing-card-icon">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="main-parant-card-item">
+                                        <div class="singel-pricing-card">
+                                            <div class="card-intro">
+                                                <h2>Standard </h2>
+                                                <p>Small Team </p>
+                                            </div>
+                                            <div class="pricing-amount">
+                                                <h2><strong>$199.99</strong> /yearly</h2>
+                                            </div>
+
+                                            <div class="pricing-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>10 Pages Responsive Website</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 PPC Campaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 10 SEO Keywords</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 Facebook Camplaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 2 Video Camplaigns</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="get-started-btn btn btn">Get Started Today</button>
+                                        </div>
+                                        <div class="pricing-card-icon">
+                                            <i class="fas fa-ribbon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="main-parant-card-item">
+                                        <div class="singel-pricing-card">
+                                            <div class="card-intro">
+                                                <h2>Ultimate </h2>
+                                                <p>Large Team </p>
+                                            </div>
+                                            <div class="pricing-amount">
+                                                <h2><strong>$199.99</strong> /yearly</h2>
+                                            </div>
+
+                                            <div class="pricing-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 50 Pages Responsive Website </p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>Unlimited PPC Campaigns </p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>Unlimited SEO Keywords </p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>Unlimited Facebook Camplaigns </p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> Unlimited Video Camplaigns </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="get-started-btn btn btn">Get Started Today</button>
+                                        </div>
+                                        <div class="pricing-card-icon">
+                                            <i class="far fa-gem"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="main-parant-card-item">
+                                        <div class="singel-pricing-card">
+                                            <div class="card-intro">
+                                                <h2>Professional </h2>
+                                                <p>A beautiful, simple website </p>
+                                            </div>
+                                            <div class="pricing-amount">
+                                                <h2><strong>$839.99</strong> /yearly</h2>
+                                            </div>
+
+                                            <div class="pricing-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>10 Pages Responsive Website</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 PPC Campaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 10 SEO Keywords</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 Facebook Camplaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 2 Video Camplaigns</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="get-started-btn btn btn">Get Started Today</button>
+                                        </div>
+                                        <div class="pricing-card-icon">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="main-parant-card-item">
+                                        <div class="singel-pricing-card">
+                                            <div class="card-intro">
+                                                <h2>Professional </h2>
+                                                <p>A beautiful, simple website </p>
+                                            </div>
+                                            <div class="pricing-amount">
+                                                <h2><strong>$899.99</strong> /yearly</h2>
+                                            </div>
+
+                                            <div class="pricing-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>10 Pages Responsive Website</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 PPC Campaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 10 SEO Keywords</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 Facebook Camplaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 2 Video Camplaigns</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="get-started-btn btn btn">Get Started Today</button>
+                                        </div>
+                                        <div class="pricing-card-icon">
+                                            <i class="fas fa-ribbon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="main-parant-card-item">
+                                        <div class="singel-pricing-card">
+                                            <div class="card-intro">
+                                                <h2>Professional </h2>
+                                                <p>A beautiful, simple website </p>
+                                            </div>
+                                            <div class="pricing-amount">
+                                                <h2><strong>$144.99</strong> /yearly</h2>
+                                            </div>
+
+                                            <div class="pricing-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p>10 Pages Responsive Website</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 PPC Campaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 10 SEO Keywords</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 5 Facebook Camplaigns</p>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        <p> 2 Video Camplaigns</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="get-started-btn btn btn">Get Started Today</button>
+                                        </div>
+                                        <div class="pricing-card-icon">
+                                            <i class="far fa-gem"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------Pricing End----->
+
 
 
     </main>

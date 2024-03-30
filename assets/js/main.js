@@ -85,8 +85,8 @@ $(document).ready(function () {
 
 // Featured Case Study Counter End
 
+// dark mood Start
 
-// dark mood start
 $(document).ready(function () {
     const darkModeToggle = $('#darkModeToggle');
     const body = $('body');
@@ -95,13 +95,25 @@ $(document).ready(function () {
         body.toggleClass('dark-mode');
         const isDarkMode = body.hasClass('dark-mode');
         localStorage.setItem('darkMode', isDarkMode);
+        updateIcon();
     });
 
     const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
     if (isDarkMode) {
         body.addClass('dark-mode');
     }
+
+    function updateIcon() {
+        const icon = darkModeToggle.find('i');
+        if (body.hasClass('dark-mode')) {
+            icon.removeClass('fa-sun').addClass('fa-moon');
+        } else {
+            icon.removeClass('fa-moon').addClass('fa-sun');
+        }
+    }
+    updateIcon();
 });
+
 // dark mood End
 
 
