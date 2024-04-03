@@ -11,6 +11,15 @@ $(window).scroll(function () {
 });
 
 
+
+/*---PRELODAR START----*/
+
+$(window).on('load', function () {
+    $('.prelodar').delay(350).fadeOut('slow');
+})
+
+/*----PRELODAR END---- */
+
 //---services start---
 $('.services-slider').slick({
     infinite: true,
