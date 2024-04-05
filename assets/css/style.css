@@ -286,12 +286,15 @@ ul.mainmenu li a svg {
 
 .contact-inner address.address span.title {
     font-size: var(--h5);
-    color: var(--tw-primary-color);
+    /* color: var(--tw-primary-color); */
+    color: var(--tw-secondary-color);
     font-weight: 600;
 }
 
+
 .dark-mode .contact-inner address.address span.title {
-    color: var(--tw-custom-color);
+    /* color: var(--tw-custom-color); */
+    color: var(--tw-secondary-color);
 }
 
 .dark-mode .contact-inner address.address p {
@@ -451,6 +454,14 @@ button.side-nav-search-btn {
     top: 38px;
 }
 
+.dark-mode button.side-nav-search-btn {
+    background-color: var(--tw-secondary-color);
+}
+
+.dark-mode button.side-nav-search-btn i {
+    color: var(--tw-custom-color);
+}
+
 button.side-nav-search-btn i {
     font-size: var(--h6);
     color: var(--tw-primary-color);
@@ -490,7 +501,8 @@ button.side-nav-search-btn i {
 }
 
 .contact-info-wrap h5.title {
-    color: var(--tw-primary-color);
+    /* color: var(--tw-primary-color); */
+    color: var(--tw-secondary-color);
 }
 
 .contact-social-share {
@@ -953,7 +965,9 @@ body.dark-mode .services-section .container {
 
 /* <!--Features Start--> */
 .features-section {
-    padding: 140px 0px;
+    /* padding: 140px 0px; */
+    padding-bottom: 140px;
+    padding-top: 40px;
 }
 
 .features-inner-parent {
@@ -1776,6 +1790,14 @@ p.client-header-discription {
 /* <!------Latest History Start-----> */
 .our-latest-sec {
     padding: 130px 0px;
+    background-image: url(//assets/img/banner-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.our-latest-headign-parent {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .main-history-card-parent {
