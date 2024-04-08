@@ -22,13 +22,14 @@ $(window).on('load', function () {
 
 //---services start---
 $('.services-slider').slick({
-    infinite: true,
+    infinite: false,
+    // infinite: true,
     slidesToShow: 3,
-    dots: true,
+    dots: false,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
     arrows: true,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
     responsive: [
         {
             breakpoint: 991,
@@ -58,8 +59,7 @@ $('.services-slider').slick({
             }
         }
     ]
-    // prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    // nextArrow: '<button type="button" class="slick-next">Next</button>'
+
 });
 
 // viddeo modal start
@@ -184,7 +184,8 @@ $('.testinmonial-slider').slick({
     slidesToShow: 3,
     arrows: true,
     slidesToScroll: 1,
-    dots: true,
+    prevArrow: "<button type='button' class='testinmonial-slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow: "<button type='button' class='testinmonial-slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
     responsive: [
         {
             breakpoint: 991,
