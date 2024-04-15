@@ -2066,7 +2066,7 @@ img.img-fluid.footer-inner-logo-two {
 }
 
 .footer-cta {
-    border-bottom: 1px solid #373636;
+    border-bottom: 1px solid var(--tw-primary-color);
 }
 
 .single-cta i {
@@ -2140,7 +2140,7 @@ img.img-fluid.footer-inner-logo-two {
 }
 
 .footer-social-icon a {
-    color: #fff;
+    color: var(--tw-custom-color);
     font-size: var(--font-body-2);
     margin-right: 15px;
 }
@@ -2263,7 +2263,7 @@ img.img-fluid.footer-inner-logo-two {
 }
 
 .copyright-text p a {
-    color: #ff5e14;
+    color: var(--tw-secondary-color);
 }
 
 .footer-menu li {
@@ -2272,7 +2272,7 @@ img.img-fluid.footer-inner-logo-two {
 }
 
 .footer-menu li:hover a {
-    color: #ff5e14;
+    color: var(--tw-secondary-color);
 }
 
 .footer-menu li a {
