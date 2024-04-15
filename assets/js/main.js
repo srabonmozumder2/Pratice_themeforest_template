@@ -208,3 +208,7 @@ $('.testinmonial-slider').slick({
 
 
 // <!------Testimonial End----->
+sal({
+    threshold: 0.5, // Trigger animations when 50% of element is visible
+    once: true // Animations only happen once
+});
